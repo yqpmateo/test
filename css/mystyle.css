@@ -1,0 +1,227 @@
+/* set all marging to 0 and padding to 0 */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#f4f4f4;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin:0; 
+
+}
+/*  a refer to Link styling */
+
+.clearboth {
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:orangered;
+}
+a:active{
+    color:green
+}
+/*
+a:visited{
+    color:black
+}
+*/
+h1 {
+    color: forestgreen;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:rgb(0,0,0)
+}
+.Box-1 {
+        background-color:lightgray;
+        color:rgb(22, 22, 77);
+        /*border-right: 5px red solid;
+        border-left: 5px red solid;
+        border-top: 5px red solid;
+        border-bottom: 5px red solid;
+        */
+        /* short way below */
+        border: 3px  red solid;
+        /* other styles
+        border-width: 3px;
+        border-bottom-width: 5px;
+        border-top-style: dotted;
+        */
+        padding: 20px;
+        margin: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+}
+
+.Box-1 h1 {
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:800 ;
+        text-decoration: underline;
+        font-style: italic;
+        text-transform: capitalize;
+        letter-spacing: 0.3 em;
+        word-spacing: 0.0 em;
+
+}
+
+.Box-2 {
+    background-color:rgb(213, 225, 233);
+    color:rgb(22, 22, 77);
+    border: 3px rgb(187, 127, 243) dashed;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.Box-2 h1 {
+    color:rgb(37, 26, 48);
+    text-transform: capitalize;
+    letter-spacing: 0.3 em;
+    word-spacing: 0.0 em;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+}
+
+.button {
+    background-color: #333;
+    color:#ffff;
+    padding:10px 15px;
+    border:none;
+}
+
+.button:hover{
+    background:red;
+    color:white;
+}
+
+.block {
+    padding-top: 10px;
+    padding-bottom: 20;
+    float:left;
+    width: 33.3%;
+    border:1px dotted black;
+    box-sizing: border-box;
+
+}
+.block h1 {
+    color:black;
+    font-style: normal;
+    font-size: 20px;
+}
+.categories{
+    border:1px burlywood solid;
+    padding-left:25px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+.categories h2 { 
+    text-align: center;
+}
+.categories ul{
+        padding:0px;
+        list-style-type: none; ;
+}
+.categories li {
+    padding-top: 8px;
+    border-bottom:dotted 1px rgb(46, 13, 13);
+    list-style-image: url('/Images/check.png');
+}
+
+.myform{
+    padding: 10px;
+    background-color: lightsteelblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.myform .form-group{
+    
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+
+.myform label{
+    display: block;
+}
+
+.myform input[type="text"], .myform textarea {
+    padding:8px;
+    width:50%;
+}
+#main-block {
+    float:left;
+    width:70%;
+}
+#sidebar {
+    float:right;
+    width:30%;
+    color:#fff;
+    background-color:#333;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border:1px solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    background-image: url("/Images/bgimage.jpg");
+    background-position: 100px 200px;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+}
+.p-box h1 {
+    position: absolute;
+    top:100px;
+    left:200px;
+}
+
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top:400px;
+}
+/*sudo class */
+.mylist li:first-child{
+    background-color: red;
+}
+.mylist li:last-child{
+    background-color: blue;
+}
+.mylist li:nth-child(even) {
+    background-color: chartreuse;
+}
+.mylist li:nth-last-child(2) {
+    background-color: darkcyan;
+}

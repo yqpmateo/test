@@ -1,0 +1,25 @@
+[
+    {
+        "Name":"Small Corporation",
+        "NumEmp":2000,
+        "Ceo":"Alejandro Mateo",
+        "Rating":3.6,
+        "Public":true
+
+    },
+    {
+        "Name":"Big Corporation",
+        "NumEmp":9000,
+        "Ceo":"Andrea Gonzalez",
+        "Rating":8.9,
+        "Public":true
+    },
+    {
+        "Name":"La Chiripa",
+        "NumEmp":25,
+        "Ceo":null,
+        "Rating":8.9,
+        "Public":true
+    }
+
+]

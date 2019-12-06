@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JSON Example  </title> 
+    </head>
+    <body>
+        <ul id="HTML-People" > </ul>
+        <script type="text/javascript">
+        /*
+           var person = {
+                name:"Alejandro",
+                age:44,
+                email:function(){
+                    return "yqpmateo@gmail.com"
+                }
+           }
+        console.log(person.email())
+        var jperson = {
+            name:"Alejandro",
+            age:44,
+            email:null,
+            married:true,
+            address:{
+                street:"4320 Washington Street",
+                city:"Hollywood",
+                state:"FL",
+                zipcode:33025
+            },
+            colors:["blue","white"]
+        }
+        var arrPerson = [
+            {
+                Name:"Juan",
+                Age:23
+
+            },
+            {
+                Name:"Pedro",
+                Age:34
+
+            },
+            {
+                Name:"Andrea",
+                Age:35
+
+            }
+        ]
+        // this the way to comment al line 
+        // jperson = JSON.stringify(jperson);
+        //jperson = JSON.parse(jperson)
+        console.log(jperson.address.street);
+        console.log(jperson.colors[0]);
+        var output = '';
+        for (var i = 0; i < arrPerson.length;i++){
+            console.log(arrPerson[i].Name);
+            output += '<li>'+arrPerson[i].Name+'</li>';
+        }
+        document.getElementById('People').innerHTML = output
+        */
+        var xhttp = new XMLHttpRequest();
+     
+        xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                var resp = JSON.parse(xhttp.responseText);
+                console.log(resp);
+                // Note resp.peple where 'people' is the array name defined on the file
+                var arrGente = resp.people;
+                var output = '';
+                for(var x = 0; x < arrGente.length;x++){
+                    console.log(arrGente[x].Name);
+                    output += '<li>'+arrGente[x].Name+'</li>';
+                }
+                document.getElementById('HTML-People').innerHTML = output;
+                
+            }
+        };
+        // Note file name doesn't have to match the array name
+        xhttp.open("GET", "people.json", true);
+        xhttp.send();
+
+        </script>
+    </body>
+</html>
